@@ -1,0 +1,135 @@
+doskey /HISTORY
+doskey /HISTORY > history.txt
+mkdir live-git
+code .
+
+
+//inicializando git
+git init
+touch index.js
+yarn init -y
+yarn add express
+
+
+//criando arquivo de exceções no git
+touch .gitignore
+
+//adicionando arquivos ao git
+git add .
+git commit -m "chore: Altera retorno da rota"
+git push
+
+git status
+
+//configurando email e user
+git config --global user.email "tisilva.developer@gmail.com"
+git config --global user.name "Tiago Silva"
+
+//adicionando commit inicial
+
+git commit -m "chore: Commit inicial"
+git status
+//fazendo alteração no arquivo
+
+git add index.js
+git commit -m "chore: Altera retorno da rota"
+git status
+
+//subir para o github
+git remote add origin https://github.com/tisilva-dev/live-git-github.git
+git push -u origin master
+
+//baixar repositorio do github
+git clone https://github.com/tisilva-dev/live-git-github
+git log
+
+//criar nova ramifiação
+
+git checkout -b feature/courses-page
+touch courses.js
+git status
+git add .
+git commit -m "Add course page"
+git log
+
+//mudar ramificação
+git checkout master
+git log
+
+cd live-git-github/
+clear
+git init
+git checkout feature/courses-page
+
+git checkout master
+   33  git checkout feature/courses-page
+   34  git push origin feature/courses-page
+   35  clear
+   36  git co master
+   37  git checkout master
+   38  git checkout -b feature/vai-dar-conflito
+
+   27  git checkout feature/courses-page
+   28  clear
+   29  history
+   30  vim courses.js
+   31  clear
+   32  git checkout master
+   33  git checkout feature/courses-page
+   34  git push origin feature/courses-page
+   35  clear
+   36  git co master
+   37  git checkout master
+   38  git checkout -b feature/vai-dar-conflito
+   39  history
+   40  vim courses.js
+   41  cd ..
+   42  cd live-git-github/
+   43  git checkout master
+   44  git pull
+   45  git checkout feature/vai-dar-conflito
+   46  git merge master
+   47  ls
+   48  vim index.js
+   49  vim index.js
+   50  ls
+   51  vim index.js
+   52  git merge master
+   53  ls
+   54  vim index.js
+   55  vim index.js
+   56  git merge master
+   57  vim index.js
+   58  vim index.js
+   59  git add .
+   60  git commit -m "Altera rota para teste 2"
+   61  git push
+   62  git push origin feature/vai-dar-conflito
+   63  git push origin master
+   64  git log
+   65  git checkout -b feature/muda-rota
+   66  vim index.js
+   67  git add .
+   68  git commit -m "Altera nome da rota para teste 3"
+   69  git push origin feature/muda-rota
+   70  history
+
+// conflito de código Git
+
+git checkout master
+git pull
+git checkout feature/vai-dar-conflito
+git merge master
+code .
+comparar no vscode o código
+git add.
+git commit -m "Merge with master"
+git push
+
+dar merge pull request
+
+*/git rebase HEAD -2
+git rebase --abort
+git rebase --continue
+git rebase -i HEAD -3*/
+
