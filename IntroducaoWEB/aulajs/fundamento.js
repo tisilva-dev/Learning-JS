@@ -4,19 +4,16 @@
 //Declarando Variáveis
 
 const aluno01 = "Tiago"
-const notaAluno1 = 9.2
+const notaAluno01 = 9.2
 
 const aluno02 = "Felipe"
-const notaAluno2 = 3.1
+const notaAluno02 = 3.1
 
 const aluno03 = "Gabriel"
-const notaAluno3 = 5.3
-
-console.log(typeof notaAluno1)
-console.log(typeof aluno01)
+const notaAluno03 = 5.3
 
 // Chamar Variáveis
-const media = (notaAluno1 + notaAluno2 + notaAluno3) / 3
+const media = (notaAluno01 + notaAluno02 + notaAluno03) / 3
 
 // Se a media for maior que 5, mostrar uma mensagem, por meio de uma condicional
 if (media > 5) {
