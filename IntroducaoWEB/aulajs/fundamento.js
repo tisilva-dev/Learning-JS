@@ -12,6 +12,9 @@ const notaAluno2 = 3.1
 const aluno03 = "Gabriel"
 const notaAluno3 = 5.3
 
+console.log(typeof notaAluno1)
+console.log(typeof aluno01)
+
 // Chamar Variáveis
 const media = (notaAluno1 + notaAluno2 + notaAluno3) / 3
 
