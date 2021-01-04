@@ -1,16 +1,12 @@
-//Calculo do IMS e Nível de Obesidade
+const nome = "Tiago"
+const peso = 86
+const altura = 1.80
 
-const nome = "Felipe"
-const altura = 1.8
-const peso = 92
-const sexo = "M"
+const IMC = peso / (altura * altura)
 
-const imc = peso / (altura * altura)
-
-console.log(`Seu IMC está em ${imc.toFixed(2)}`)
-
-if (imc >= 30) {
-    console.log("Está acima do Peso.")
-} else if (imc < 29.9) {
-    console.log("Está abaixo do peso.")
+if (IMC >= 30){
+    console.log(`${nome}, o seu IMC é ${IMC.toFixed(2)} e você está acima do peso.`)
+}
+if (IMC < 29.9){
+    console.log(`${nome}, o seu IMC é ${IMC.toFixed(2)} e você não está acima do peso.`)
 }
