@@ -22,13 +22,14 @@ OPERADORES
 // console.log(4 != "5")
 // console.log(4 !== "5")
 
+// verifique se a pessoa tem 18 anos
 
 // const idade = 17
 
 // if (idade >= 18) {
 //     console.log("Pode entrar")
 // } else {
-//     console.log("Não pode entrar")
+//     console.log("Bloquear entrada")
 // }
 
 // if (idade === 17) {
@@ -58,7 +59,7 @@ OPERADORES LOGICOS
 // // verificar se a pessoa é maior ou tem 18 anos
 // // se sim deixar entra, senao, nao deixar entrar
 // if (!(idade >= 18) || idade === 17) {
-//     console.log("Não pode entrar")
+//     console.log("Bloqueiar a entrada")
 // } else {
 //     console.log("Pode entrar")
 // }
