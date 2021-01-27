@@ -1,15 +1,32 @@
-const programador = {
-    nome: "Tiago",
-    idade: "21",
-    tecnologias: [
-        { nome: "JavaScript", especialidade: "React/React Native" },
-        { nome: "Java", especialidade: "Mobile" },
-        { nome: "Python", especialidade: "Inteligência Artificial" }
-    ]
-}
+const programador = [
+    {
+        nome: "Tiago",
+        idade: 22,
+        tecnologia: { nome: "JavaScript", especialidade: "Web" }
+    },
+    {
+        nome: "Fernando",
+        idade: 38,
+        tecnologia: { nome: "Flutter", especialidade: "Mobile" }
+    },
+    {
+        nome: "Cesar",
+        idade: "29",
+        tecnologia: [
+            { nome: "Java", especialidade: "Desktop" },
+            { nome: "Python", especialidade: "Machine Learning" }
 
-console.log(`O Programador ${programador.nome}, tem ${programador.idade} anos
-e a tecnologia que no momento está trabalhando é ${programador.tecnologias[0].nome},
-só está se especializando em ${programador.tecnologias[0].especialidade}.
-Também tem conhecimento das tecnologias: ${programador.tecnologias[1].nome} e ${programador.tecnologias[2].nome}.
-Dessas tecnologias ele se especializou respectivamente em: ${programador.tecnologias[1].especialidade} e ${programador.tecnologias[2].especialidade}.`)
+          ]
+    }
+]
+
+console.log(`O usuário ${programador[0].nome} tem ${programador[0].idade} e usa a tecnologia ${programador[0].tecnologia.nome}`,
+    `com especialidade em ${programador[0].tecnologia.especialidade}.`)
+
+console.log(`O usuário ${programador[1].nome} tem ${programador[1].idade} e usa a tecnologia ${programador[1].tecnologia.nome}`,
+    `com especialidade em ${programador[1].tecnologia.especialidade}.`)
+
+console.log(`O usuário ${programador[2].nome} tem ${programador[2].idade} e usa as tecnologias ${programador[2].tecnologia[0].nome}`,
+    `com especialidade em ${programador[2].tecnologia[0].especialidade} e ${programador[2].tecnologia[1].nome}`,
+    `com especialidade em ${programador[2].tecnologia[1].especialidade}.`)
+
